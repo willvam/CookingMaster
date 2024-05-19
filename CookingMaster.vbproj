@@ -1,0 +1,559 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CEF86BCD-5467-4EA8-A7E5-51CF34DAB9FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CookingMaster.My.MyApplication</StartupObject>
+    <RootNamespace>CookingMaster</RootNamespace>
+    <AssemblyName>CookingMaster</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CookingMaster.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CookingMaster.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.vb">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.vb">
+      <DependentUpon>Form6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.vb">
+      <DependentUpon>Form7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_1278.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hamberger2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\japan.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0711760_PE728452_S5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\艾莉.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6397.jpg_wh300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8261.jpg_wh300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0712367_PE728786_S5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E1594015601211.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3006885-2_xxl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b4d91ed2b4283f5c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\W1siZiIsIjIxMzEwL3Byb2R1Y3RzLzM2ODQ0NjI3LzE2NTI4MDY2NjVfYzU4NzQ5MTVlNGU1MjFjMDI3ODIuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\800x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9c3d0f72c4d69066.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5414_G_1562746018669.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dfghdxfg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ebde65f4e2f091e6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6b7d5f26bee578e0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15fba918-7dc8-41fe-91c7-de1425bb0d5c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20181120174150_84.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\出餐口.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\生菜.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\完整漢堡2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\垃圾桶.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\洗碗槽.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\洗碗槽+髒盤子.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\食材箱+起司.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\食材箱+番茄.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\食材箱+漢堡肉.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\食材箱+麵包.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\桌子.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\桌子+砧板.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\桌子+鍋架+平底鍋.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\桌子+鍋架+平底鍋+漢堡肉.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\砧板+生菜.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\砧板+番茄.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\起司.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\番茄.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\漢堡肉.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\盤子.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\麵包.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\髒盤子.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70230926.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\出餐口+豆皮壽司.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\出餐口+鮮魚壽司.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\出餐口+鮮蝦壽司.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\米飯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\豆皮.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\豆皮壽司.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\食材箱+米飯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\食材箱+豆皮.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\食材箱+海苔.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\食材箱+魚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\食材箱+蝦.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\桌子+飯鍋.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\海苔.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\砧板+魚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\砧板+蝦.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\魚.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蝦.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\鮮魚壽司.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\鮮蝦壽司.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\出餐口+巧克力蛋糕.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\出餐口_蛋.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\出餐口+草莓蛋糕.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\出餐口+蜂蜜蛋糕.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\巧克力.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\巧克力蛋糕.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\垃圾桶_蛋.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\食材箱+巧克力.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\食材箱+草莓.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\食材箱+蜂蜜.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\食材箱+雞蛋.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\食材箱+麵粉.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\桌子_蛋.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\桌子+烤箱%28有蛋糕%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\桌子+烤箱%28空%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\桌子+攪拌機%28巧克力%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\桌子+攪拌機%28空%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\桌子+攪拌機%28草莓%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\桌子+攪拌機%28蜂蜜%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\草莓.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\草莓蛋糕.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蜂蜜.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蜂蜜蛋糕.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\雞蛋.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\麵粉.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蝦後.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\訂單鮮蝦壽司.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\訂單鮮魚壽司.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\訂單豆皮壽司.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\魚%28切後%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\碗飯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\食材箱+生漢堡肉.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\番茄切片.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\食材箱+生菜.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\生菜%28前%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\生漢堡肉.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蛋糕店背景圖.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\完整漢堡1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\出餐口+完整漢堡2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\出餐口+完整漢堡1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\結算畫面兩顆星背景圖.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\結算畫面三顆星背景圖.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\結算畫面一顆星背景.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\主畫面背景圖.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\人物2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\人物1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\開始遊戲.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\結束遊戲.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\人物2%404x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\人物1%404x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\訂單完整漢堡1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\訂單完整漢堡2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\訂單蜂蜜蛋糕.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\訂單草莓蛋糕.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\訂單巧克力蛋糕.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\巧克力麵團.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\草莓麵團.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\蜂蜜麵團.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\日式餐廳背景圖.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\美式餐廳背景圖.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
